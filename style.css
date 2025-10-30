@@ -1,0 +1,138 @@
+:root {
+    --bg: hsl(0 0% 90%);
+    --bg-light: hsl(0, 0%, 100%);
+    --bg-dark: hsl(0, 0%, 85%);
+
+    --bg-gradient: linear-gradient(to bottom, var(--bg-light), var(--bg));
+
+    --text: hsl(0, 0%, 10%);
+    --text-muted: hsl(0 0% 20%);
+
+    --border: hsl(0, 0%, 40%);
+    --shadow: hsla(0 0% 0% / 0.35);
+
+    --primary: hsl(210 100% 75%);
+    --secondary: hsl(224 100% 67.6%);
+
+    --gradient: linear-gradient(to bottom right, var(--primary), var(--secondary));
+
+    --radius: 20px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: var(--text);
+    padding: 1px 1px 1px 30px;
+    text-align: left;
+}
+
+h5 {
+    background: var(--bg-gradient);
+    max-width: 100%;
+    padding: 20px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: 2px 2px 10px var(--shadow);
+    margin-top: 30px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--gradient);
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100dvh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.overview {
+    background: var(--bg-gradient);
+    max-width: 100%;
+    padding: 10px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    box-shadow: 2px 2px 10px var(--shadow);
+    margin-top: 30px;
+}
+
+button {
+    background: var(--gradient);
+    border-radius: var(--radius);
+    border: none;
+    padding: 10px 15px 10px 15px;
+    margin-left: -40px;
+    margin-top: 10px;
+    color: var(--bg);
+    font-weight: bold;
+}
+
+a {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+p {
+    color: var(--text-muted);
+    padding-left: 30px;
+}
+
+h5 {
+    color: var(--text-muted);
+    padding-left: 30px;
+}
+
+.line {
+    margin-right: 30px;
+}
+
+.wrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.today {
+    font-size: 100px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: var(--text);
+}
+
+input {
+    background: var(--bg-dark);
+    border-radius: var(--radius);
+    border: none;
+    font-weight: normal;
+    color: var(--text);
+    padding: 10px 80px 10px 15px;
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 300px;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    p,
+    h5 {
+        padding-left: 100px;
+    }
+}
+
+
+
+
+
