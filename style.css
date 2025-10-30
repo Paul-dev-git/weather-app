@@ -130,6 +130,14 @@ input:focus {
     h5 {
         padding-left: 100px;
     }
+
+    .overview {
+        width: 400px;
+    }
+
+    input {
+        width: 100px;
+    }
 }
 
 

@@ -23,8 +23,6 @@ document.getElementById("SearchButton").addEventListener("click", async function
         }
 
         const temp = Math.round(data.main.temp);
-        //let emoji = "";
-
         if (temp >= 20) {
             emoji = "☀️";
         } else if (temp >= 12) {
