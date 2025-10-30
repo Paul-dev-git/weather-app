@@ -128,15 +128,37 @@ input:focus {
 
     p,
     h5 {
-        padding-left: 100px;
+        padding-left: 30px;
+        width: 80%;
     }
 
     .overview {
-        width: 400px;
+        width: 90%;
     }
 
     input {
-        width: 100px;
+        width: 40%;
+    }
+
+    .line {
+        padding-left: 10px;
+        font-size: 0;
+    }
+
+    .line::after {
+        content: '____________________________________';
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+
+    .today {
+        font-size: 100px;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        color: var(--text);
     }
 }
 
